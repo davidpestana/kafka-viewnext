@@ -3,6 +3,12 @@ bootstrap-server= broker1:9092,broker2:9092,broker3:9092
 start:
 	docker compose up -d
 
+start-localhost:
+	docker compose -f docker-compose.localhost.yaml up -d
+
+launch-services:
+	docker compose -f services.yaml up
+
 build:
 	@read -p "Enter Tag Name: " tag; \
 	docker build -t $$tag .
@@ -33,6 +39,12 @@ create-topic:
 			"./bin/kafka-topics.sh --bootstrap-server $(bootstrap-server) --create --partitions $$partitions --replication-factor $$replication --topic $$topic"
 
 
+delete-topic:
+	@read -p "Enter Topic Name: " topic; \
+	docker compose -f tools.yaml run --rm tools bash -c \
+			"./bin/kafka-topics.sh --bootstrap-server $(bootstrap-server) --delete --topic $$topic"
+
+
 topic-list:
 	docker compose -f tools.yaml run --rm tools bash -c \
 			"./bin/kafka-topics.sh --bootstrap-server $(bootstrap-server) --list"
@@ -58,5 +70,6 @@ launch-producer:
 
 launch-consumer:
 	@read -p "Enter Topic Name: " topic; \
+	read -p "Enter Group Id: " groupId; \
 	docker compose -f tools.yaml run --rm tools bash -c \
-			"./bin/kafka-console-consumer.sh --bootstrap-server $(bootstrap-server) --from-beginning --topic $$topic"
+			"./bin/kafka-console-consumer.sh --bootstrap-server $(bootstrap-server) --from-beginning --group $$groupId --topic $$topic"

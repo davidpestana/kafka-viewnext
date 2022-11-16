@@ -1,0 +1,9 @@
+version: "3"
+services:   
+  microservicioA:
+    image: node
+    command: ['npm', 'start']
+    working_dir: /app
+    volumes:
+      - ./src/microservicioA:/app
+ 

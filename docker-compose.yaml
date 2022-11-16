@@ -32,3 +32,30 @@ services:
     volumes:
       - ./config:/config
       - ./state/broker3:/kafka-logs
+
+  microservicioA:
+    image: node
+    deploy:
+      replicas: 5
+    command: ['npm', 'start']
+    depends_on:
+      - broker1
+      - broker2
+      - broker3
+    working_dir: /app
+    volumes:
+      - ./src/microservicioA:/app
+
+
+  microservicioB:
+    image: node
+    deploy:
+      replicas: 1
+    command: ['npm', 'run', 'start-example']
+    depends_on:
+      - broker1
+      - broker2
+      - broker3
+    working_dir: /app
+    volumes:
+      - ./src/microservicioA:/app
