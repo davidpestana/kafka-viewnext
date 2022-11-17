@@ -11,7 +11,7 @@ services:
       context: .
     command: ['./bin/kafka-server-start.sh', '/config/localhost/broker1']
     ports:
-      - 9093:9093
+      - 29092:29092
     volumes:
       - ./config:/config
   broker2:
@@ -19,7 +19,7 @@ services:
       context: .
     command: ['./bin/kafka-server-start.sh', '/config/localhost/broker2']
     ports: 
-      - 9094:9094
+      - 29093:29093
     volumes:
       - ./config:/config
 
@@ -28,6 +28,6 @@ services:
       context: .
     command: ['./bin/kafka-server-start.sh', '/config/localhost/broker3']
     ports:
-      - 9095:9095
+      - 29094:29094
     volumes:
       - ./config:/config
