@@ -9,6 +9,10 @@ const kafka = new Kafka({
 const consumer = kafka.consumer({ groupId: 'test-group' })
 const producer = kafka.producer()
 
+const schema = {
+    name: "string",
+    subName: "string"
+}
 
 const init = async () => {
     await consumer.connect().then(() => console.log('se ha conectado el consumer'));

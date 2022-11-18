@@ -31,3 +31,17 @@ services:
       - 29094:29094
     volumes:
       - ./config:/config
+
+
+  schema-registry:
+    image: confluentinc/cp-schema-registry:7.3.0
+    hostname: schema-registry
+    container_name: schema-registry
+    depends_on:
+      - broker
+    ports:
+      - "8081:8081"
+    environment:
+      SCHEMA_REGISTRY_HOST_NAME: schema-registry
+      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: 'localhost:29092, localhost:29093, localhost:29094'
+      SCHEMA_REGISTRY_LISTENERS: http://0.0.0.0:8081

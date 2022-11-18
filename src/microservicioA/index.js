@@ -5,6 +5,15 @@ const kafka = new Kafka({
   brokers: ['broker1:9092', 'broker2:9092', 'broker3:9092'],
 });
 
+const schema = {
+    name: "string",
+    subName: "string"
+}
+
+const user = {
+    name: "david",
+    subName: "pestana"
+}
 
 const producer = kafka.producer()
 
@@ -12,7 +21,7 @@ const send = (producer, counter) => {
    producer.send({
     topic: 'A',
         messages: [
-            { value: 'Hello KafkaJS user! ' + counter },
+            { value: JSON.stringify(user) },
         ],
     })
     .then((response)=>{console.log(response)})

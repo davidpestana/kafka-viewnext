@@ -6,6 +6,9 @@ start:
 start-localhost:
 	docker compose -f docker-compose.localhost.yaml up -d
 
+start-all-in-one:
+	docker compose -f docker-compose.all-in-one.yaml up -d
+
 launch-services:
 	docker compose -f services.yaml up
 
