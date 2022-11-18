@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "start-example": "node example.js",
+    "consumer": "node consumer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

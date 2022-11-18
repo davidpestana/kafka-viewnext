@@ -59,3 +59,18 @@ services:
     working_dir: /app
     volumes:
       - ./src/microservicioA:/app
+
+
+
+  microservicioC:
+    image: node
+    deploy:
+      replicas: 10
+    command: ['npm', 'run', 'consumer']
+    depends_on:
+      - broker1
+      - broker2
+      - broker3
+    working_dir: /app
+    volumes:
+      - ./src/microservicioA:/app

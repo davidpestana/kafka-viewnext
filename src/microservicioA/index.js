@@ -10,7 +10,7 @@ const producer = kafka.producer()
 
 const send = (producer, counter) => {
    producer.send({
-    topic: 'tresPdosR',
+    topic: 'A',
         messages: [
             { value: 'Hello KafkaJS user! ' + counter },
         ],
