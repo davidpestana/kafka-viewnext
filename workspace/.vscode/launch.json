@@ -1,0 +1,249 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ManualCommitConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.commit.ManualCommitConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch InfoConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.info.InfoConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch ManualPartitionConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.manualpartition.ManualPartitionConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeekConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.manualpartition.SeekConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartitionConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.partitioner.PartitionConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartitionProducer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.partitioner.PartitionProducer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.simple.SimpleConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleProducer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.simple.SimpleProducer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransactionalConsumer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.transactional.TransactionalConsumer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch TransactionalProducer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.producersconsumers.transactional.TransactionalProducer",
+            "projectName": "Ejemplo01ProducersConsumers"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryConsumerRecordNameStrategy",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.avro.SchemaRegistryConsumerRecordNameStrategy",
+            "projectName": "Ejemplo02Avro"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryConsumerTopicStrategy",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.avro.SchemaRegistryConsumerTopicStrategy",
+            "projectName": "Ejemplo02Avro"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryProducerRecordNameStrategyClima",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.avro.SchemaRegistryProducerRecordNameStrategyClima",
+            "projectName": "Ejemplo02Avro"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryProducerRecordNameStrategyDatos",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.avro.SchemaRegistryProducerRecordNameStrategyDatos",
+            "projectName": "Ejemplo02Avro"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryProducerTopicStrategy",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.avro.SchemaRegistryProducerTopicStrategy",
+            "projectName": "Ejemplo02Avro"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo02StreamsAvro",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.avro.Ejemplo02StreamsAvro",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryProducer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.avro.SchemaRegistryProducer",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo01StreamsBase",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.base.Ejemplo01StreamsBase",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleConsumer(1)",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.base.SimpleConsumer",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleProducer(1)",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.base.SimpleProducer",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductorPeliculas",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.join.ProductorPeliculas",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductorValoraciones",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.join.ProductorValoraciones",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stream06Join",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.join.Stream06Join",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaRegistryProducerState",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.state.SchemaRegistryProducerState",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stream05State",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.state.Stream05State",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo03StreamsTopology",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.topology.Ejemplo03StreamsTopology",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleProducer(2)",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.topology.SimpleProducer",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejemplo04KTableWindowed",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.windowed.Ejemplo04KTableWindowed",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch KTableWindowProducer",
+            "request": "launch",
+            "mainClass": "com.curso.kafka.streams.windowed.KTableWindowProducer",
+            "projectName": "Ejemplo03Streams"
+        },
+        {
+            "type": "java",
+            "name": "Launch CreateGroup",
+            "request": "launch",
+            "mainClass": "com.kafka.zookeeper.CreateGroup",
+            "projectName": "api-zookeeper",
+            "args": "zookeeper miGrupo"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeleteGroup",
+            "request": "launch",
+            "mainClass": "com.kafka.zookeeper.DeleteGroup",
+            "projectName": "api-zookeeper"
+        },
+        {
+            "type": "java",
+            "name": "Launch JoinGroup",
+            "request": "launch",
+            "mainClass": "com.kafka.zookeeper.JoinGroup",
+            "projectName": "api-zookeeper",
+            "args": "zookeeper miGrupo"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListGroup",
+            "request": "launch",
+            "mainClass": "com.kafka.zookeeper.ListGroup",
+            "projectName": "api-zookeeper",
+            "args": "zookeeper miGrupo"
+
+        }
+    ]
+}
